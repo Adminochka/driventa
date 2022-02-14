@@ -1,0 +1,57 @@
+html,
+body {
+	height: 100%;
+}
+
+body {
+	font-family: $font-base;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+	color: #949EA8;
+	background-color: #F3F3F3;
+	overflow-x: hidden;
+	min-width: 320px;
+}
+
+a {
+	color: inherit;
+}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.title {
+	font-family: $font-title;
+	font-weight: 600;
+	color: $color-title;
+	font-size: 42px;
+    line-height: 100%;
+    letter-spacing: -0.03em;
+}
+
+.subtitle {
+	font-family: $font-title;
+	font-weight: 600;
+	color: $color-title;
+	font-size: 20px;
+	line-height: 140%;
+}
+
+.btn {
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 22px;
+	color: $color-white;
+	padding: 13px 41px 17px;
+	background: #1D86F0;
+	border-radius: 30px;
+	border: none;
+}
+
+.btn:active{
+    transform: scale(0.98);
+}

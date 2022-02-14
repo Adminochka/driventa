@@ -1,0 +1,406 @@
+@media (max-width: 1460px){
+    .advantages-bg {
+        &__tree{
+            display: none;
+        }
+        &__car{
+            display: none;
+        }
+        &__cloud-left{
+            left: 6%;
+        }
+        &__cloud-right-large{
+            left: 79%;
+        }
+        &__cloud-right-small{
+            left: 91%;
+        }
+        &__mountain-block{
+            animation: none;
+        }
+        &__mountain-hidden{
+            display: none;
+        }
+        &__road-block{
+            animation: none;
+        }
+        &__road-hidden{
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 1010px){
+    .about {
+        &__item {
+            padding: 0 20px;
+        }
+    }
+    .partners {
+        &__list {
+            gap: 60px;
+        }
+    }
+    .advantages-bg {
+        &__cloud-left{
+            animation: none;
+        }
+        &__cloud-right-large{
+            display: none;
+        }
+        &__cloud-right-small{
+            left: 83%;
+            animation: none;
+        }
+    }
+    .advantages {
+        &__list {
+            gap: 35px;
+        }
+    }
+}
+
+@media (max-width: 860px) {
+    .title {
+        font-size: 36px;
+    }
+    .subtitle {
+        font-size: 18px;
+    }
+    .partners {
+        &__list {
+            gap: 30px;
+        }
+        &__item {
+            width: 350px;
+        }
+    }
+    .advantages {
+        &__list {
+            gap: 20px;
+        }
+    }
+    .footer {
+        &__form {
+            width: 50%;
+        }
+        &__content {
+            width: 50%;
+        }
+        &__find-car {
+            display: none;
+        }
+        &__btn-place {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .about {
+        margin-top: 80px;
+        margin-bottom: 100px;
+        &__title {
+            margin-bottom: 60px;
+        }
+        &__list {
+            display: block;
+        }
+        &__item {
+            max-width: 430px;
+            margin: 0 auto 40px;
+        }
+    }
+    .advantages-bg {
+        background: url('../images/advantages-bg-small.png') no-repeat center 100%;
+        background-color: $color-title;
+        background-position: center 100%;
+        padding-bottom: 90px;
+        &__cloud-left{
+            display: none;
+        }
+        &__cloud-right-large{
+            top: 70px;
+            left: -110px;
+            display: block;
+            animation: none;
+        }
+        &__cloud-right-small{
+            left: calc(100% - 35px);
+            top: 110px;
+        }
+        &__mountain-block{
+            display: none;
+        }
+        &__road-block{
+            display: none;
+        }
+    }
+    .advantages {
+        margin-bottom: 80px;
+        &__list {
+            display: block;
+        }
+        &__item {
+            max-width: 343px;
+            width: 100%;
+            margin: 0 auto 40px;
+        }
+        &__car-mobile{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 5px 0;
+            width: 430px;
+            margin: 50px;
+            overflow-x: hidden;
+            margin: 0 auto;
+        }
+        &__car-svg {
+            width: 430px;
+        }
+    }
+    .placeCar {
+        margin-bottom: 100px;
+        &__title {
+            margin-bottom: 30px;
+            padding: 0 15px;
+        }
+        &__inner {
+            margin: 0 -15px;
+            border-radius: 0;
+            box-shadow: none;
+        }
+        &__form {
+            width: 100%;
+            padding: 0 20px;
+        }
+    }
+    .form-carType {
+        grid-template-columns: repeat(5, 96px);
+        gap: 20px;
+    }
+    .footer {
+        &__top-bg {
+            background-image: none;
+            background-image: url('../images/footer-bg-small.jpg');
+            background-repeat: no-repeat;
+            background-position: center bottom;
+            background-size: contain;
+            padding-bottom: 120px;
+        }
+        &__top {
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+        &__form {
+            width: 100%;
+            margin: 0;
+        }
+        &__form-btn {
+            text-align: center;
+            padding-bottom: 37px;
+        }
+        &__content {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media (max-width: 680px) {
+    .partners {
+        padding-bottom: 70px;
+        &__list {
+            display: block;
+        }
+        &__item {
+            max-width: 430px;
+            margin: 0 auto 60px;
+        }
+    }
+    .placeCar {
+        margin-bottom: 80px;
+    }
+}
+
+@media (max-width: 620px) {
+    .title {
+        font-size: 32px;
+    }
+    .menu {
+        &__btn {
+            position: relative;
+            display: block;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 135%;
+            color: $color-title;
+            background-color: transparent;
+            border: none;
+            padding-right: 18px;
+        }
+        &__btn::after {
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 7px;
+            top: 8px;
+            right: 0;
+            background-image: url('../images/arrows-icon.svg');
+            background-repeat: no-repeat;
+            transition: all .5s;
+        }
+        &__btn--active::after {
+            transform: rotate(180deg);
+        }
+        &__list {
+            display: block;
+            position: absolute;
+            top: 52px;
+            left: 0;
+            right: 0;
+            background-color: rgba($color-white, .8);
+            text-align: center;
+            transform: translateY(-150%);
+            // transition: all .5s;
+        }
+        &__list-item {
+            padding: 5px;
+            margin: 0;
+        }
+        &__list-item:first-child {
+            margin-top: 15px;
+        }
+        &__list-item:last-child {
+            margin-bottom: 15px;
+        }
+        &__list-link {
+            display: block;
+            padding: 10px 0;
+        }
+    }
+    .header__menu--active {
+        transform: translateY(0);
+    }
+    .header {
+        &__top-inner {
+            height: 52px;
+        }
+        &__logo {
+            width: 100px;
+        }
+    }
+    .form-carType {
+        grid-template-columns: repeat(4, 96px);
+        gap: 20px;
+    }
+    .footer {
+        &__nav {
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+        &__language {
+            width: 100%;
+        }
+        &__menu {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 28px;
+    }
+    .subtitle {
+        font-size: 16px;
+    }
+    .about {
+        margin-top: 40px;
+        margin-bottom: 60px;
+        &__item {
+            max-width: 320px;
+            margin: 0 auto 40px;
+        }
+    }
+    .partners {
+        padding: 60px 0 0;
+        &__item {
+            max-width: 290px;
+        }
+    }
+    .advantages {
+        margin-bottom: 60px;
+        &__car-mobile{
+            width: 343px;
+        }
+        &__car-svg{
+            width: 343px;
+        }
+    }
+    .form-carType {
+        grid-template-columns: repeat(3, 96px);
+    }
+    .form-year {
+        &__list {
+            width: 100%;
+        }
+    }
+    .placeCar {
+        &__title {
+            margin-bottom: 10px;
+        }
+        &__inner {
+            padding: 60px 0;
+        }
+        &__form-row {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        &__form-btn {
+            margin-top: 10px;
+        }
+    }
+    .select2 {
+        width: 100% !important;
+    }
+    .placeCar {
+        margin-bottom: 60px;
+    }
+    .footer {
+        &__logo {
+            margin-bottom: 30px;
+        }
+        &__top-bg {
+            padding-bottom: 95px;
+        }
+        &__menu {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 380px) {
+    .advantages {
+        &__car-mobile{
+            width: 280px;
+        }
+        &__car-svg{
+            width: 280px;
+        }
+    }
+    .form-carType {
+        grid-template-columns: repeat(2, 96px);
+        justify-content: space-around;
+        gap: 20px;
+    }
+    .footer {
+        &__top-bg {
+            padding-bottom: 80px;
+        }
+    }
+}
